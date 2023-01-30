@@ -130,7 +130,7 @@ body {
 
 .contact .container {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
 }
 
 .contact {
@@ -176,7 +176,7 @@ body {
     margin-bottom: 20px;
 }
 
-.contact .socials-list-link {
+.contact .socialmedia-list-link {
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
@@ -190,15 +190,7 @@ body {
     -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.contact .socials-list {
-    display: flex;
-}
-
-.contact .socials-list:first-child {
-    margin-left: 0;
-}
-
-.contact .socials-list {
+.contact .socialmedia-list {
     margin-left: 10px;
 }
 
@@ -213,7 +205,7 @@ body {
 .portfolio-list,
 .social-list,
 .clients-list,
-.socials-list {
+.socialmedia-list {
     list-style: none;
 }
 /* List styles end */
@@ -245,6 +237,12 @@ body {
     color: var(--primary-color);
 }
 
+header-address-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: currentColor;
+}
+
 /* Hero Section */
 
 .hero-main-header {
@@ -261,7 +259,9 @@ body {
   }
 
 .hero-up-side {
-    background-color: var(--dark-bg-color);
+    background: url(../img/hero-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     color: var(--third-colorFont);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -295,11 +295,6 @@ body {
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*Icon Fill Studio */
-
-.icon {
-    fill: var(--icon-color-main);
-}
 
 /*Feature secton */
 .container .features-list {
@@ -438,6 +433,7 @@ body {
     height: 44px;
     align-items: center;
     justify-content: center;
+    fill: var(--icon-color-main);
 }
 
 .ourteam .icon-thumb:hover,
@@ -471,10 +467,6 @@ body {
     margin-left: 30px;
 }
 
-.clients-list-item:first-child {
-    margin-left: 0;
-}
-
 .clients-list-link {
     display: flex;
     justify-content: center;
@@ -483,10 +475,22 @@ body {
     border-radius: 6px;
     width: 170px;
     height: 92px;
+    color: var(--icon-color-main)
 }
 
-.clients-list-item .icon:hover {
-    fill: var(--primary-color);
+/*Icon Fill Studio */
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.clients-list-link .icon {
+  fill: currentColor;
+}
+
+.clients-list-link:hover .icon,
+.clients-list-link:focus .icon {
+  fill: var(--primary-color);
 }
 
 /*Portfolio*/
