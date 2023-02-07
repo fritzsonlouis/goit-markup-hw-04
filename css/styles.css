@@ -191,7 +191,43 @@ body {
 }
 
 .contact .socialmedia-list {
-    margin-left: 10px;
+    display: flex;
+}
+
+/* Footer social media */
+.socialmedia-list-container {
+    margin-left: 70px;
+}
+
+.socialmedia-list-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-colorFont);
+    margin-bottom: 20px;
+}
+
+.socialmedia-list {
+    display: flex;
+}
+
+.socialmedia-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socialmedia-list-link .icon {
+    fill: var(--third-colorFont);
+}
+
+.socialmedia-list .socialmedia-list-link:hover,
+.socialmedia-list .socialmedia-list-link:active {
+    background-color: var(--primary-color);
+}
+
+.socialmedia-list .socialmedia-list-link:hover {
+    fill: var(--third-colorFont);
 }
 
 /* List styles */
@@ -259,7 +295,8 @@ body {
   }
 
 .hero-up-side {
-    background: url(../img/hero-bg.jpg) no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: var(--third-colorFont);
@@ -444,6 +481,7 @@ body {
 .ourteam .icon-thumb:hover .icon {
     fill: var(--third-colorFont);
 }
+
 
 /*Clients Section*/
 
