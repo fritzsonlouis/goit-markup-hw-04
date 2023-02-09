@@ -478,6 +478,10 @@ body {
     fill: var(--third-colorFont);
 }
 
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
 
 /*Clients Section*/
 
