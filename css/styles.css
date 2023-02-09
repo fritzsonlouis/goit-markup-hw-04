@@ -458,10 +458,6 @@ body {
     margin-bottom: 30px;
 }
 
-.ourteam .social-list-items {
-    margin-left: 10px;
-}
-
 .ourteam .icon-thumb {
     background-color: transparent;
     border-radius: 50%;
@@ -499,10 +495,15 @@ body {
     display: flex;
 }
 
+
+
 .clients-list-item {
     width: 170px;
     height: 92px;
-    margin-left: 30px;
+}
+
+.clients-list-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .clients-list-link {
@@ -576,6 +577,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list-item {
